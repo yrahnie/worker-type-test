@@ -47,31 +47,29 @@ $(document).ready(function () {
       money_anime(3);
 
       window.setTimeout(function () {
-        location.href = "./type1.html";
-      }, 2000);
+        var rand_1_8 = Math.floor(Math.random() * 7) + 1;
+        console.log("random number = " + rand_1_8);
 
-      // formData.append("csrfmiddlewaretoken", csrf_token);
-      // $.ajax({
-      //   url: calculate_ajax,
-      //   method: "POST",
-      //   data: formData,
-      //   success: function (data) {
-      //     window.setTimeout(function () {
-      //       gtag_result(data.code, data.option_title);
-      //       location.href = data.path;
-      //     }, 2000);
-      //   },
-      //   cache: false,
-      //   processData: false,
-      //   contentType: false,
-      // });
+        var file_name = "./result/type" + rand_1_8 + ".html";
+        /* if (rand_1_8 == 0) {
+          location.href = "./result/type1.html";
+        } else if (rand_1_8 == 1) {
+          location.href = "./result/type2.html";
+        } else if (rand_1_8 == 2) {
+          location.href = "./result/type3.html";
+        } else if (rand_1_8 == 3) {
+          location.href = "./result/type4.html";
+        } else { */
+        location.href = file_name;
+        // }
+      }, 2000);
     }
   });
 
   function next_set(i) {
     var next_elements = $(".question_inner[count=" + i + "]");
 
-    //愿묎퀬 留곹겕 attr �ъ꽕��
+    //광고 링크 attr 재설정
     $(".ad_href").attr("page", "question #" + i);
     next_elements.css("display", "flex");
     question_page_animation(i);

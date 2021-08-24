@@ -51,17 +51,7 @@ $(document).ready(function () {
         console.log("random number = " + rand_1_8);
 
         var file_name = "./result/type" + rand_1_8 + ".html";
-        /* if (rand_1_8 == 0) {
-          location.href = "./result/type1.html";
-        } else if (rand_1_8 == 1) {
-          location.href = "./result/type2.html";
-        } else if (rand_1_8 == 2) {
-          location.href = "./result/type3.html";
-        } else if (rand_1_8 == 3) {
-          location.href = "./result/type4.html";
-        } else { */
         location.href = file_name;
-        // }
       }, 2000);
     }
   });

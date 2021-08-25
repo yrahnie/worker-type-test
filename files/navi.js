@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(document).on("click", "#back_button", function () {
-    if (history.href !== "/") {
+    if (window.location.pathname !== "/") {
       console.log("BACK");
       history.back();
     }

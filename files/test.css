@@ -15,11 +15,6 @@
   font-style: normal;
 }
 
-body {
-  word-break: keep-all;
-  user-select: none;
-}
-
 .p-side {
   padding-left: 20px;
   padding-right: 20px;
@@ -34,7 +29,6 @@ body,
 button {
   font-family: "GongGothicMedium";
   font-weight: 500;
-  background-color: #ececec;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -129,7 +123,7 @@ button {
   margin-right: auto;
   padding: 0 20px;
   height: auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 #start_inner .title_row h2 {
@@ -324,7 +318,7 @@ button {
   font-family: "GongGothicMedium";
   position: relative;
   background-color: white;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
 }
 
 #result_container .title_row {
@@ -443,11 +437,8 @@ button {
   border-radius: 8px;
 }
 
-#result_container .floating_wrapper {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  background-color: #828282;
+.floating_wrapper {
+  margin-bottom: 2.1rem;
 }
 
 #result_container .floating_wrapper .retry,

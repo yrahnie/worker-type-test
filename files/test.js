@@ -9,15 +9,6 @@ $(document).ready(function () {
     next_set(1);
   });
 
-  $(document).on("click", "#back_button", function () {
-    console.log("RESTART");
-    location.reload();
-  });
-  $(document).on("click", "#back_home", function () {
-    console.log("RESTART");
-    history.back();
-  });
-
   $(document).on("click", ".next_question", function () {
     var current_count = $(this).closest(".question_inner").attr("count");
     var qid = $(this).closest(".question_inner").attr("qid");

@@ -136,14 +136,26 @@ button {
 #start_inner .title_row h2 {
   color: #4f4f4f;
   font-weight: 700;
-  line-height: 24px;
-  font-size: 24px;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 2rem;
   user-select: none;
 }
 
 #start_inner .title_row h1 {
-  line-height: 32px;
-  font-size: 32px;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  color: #333333;
+  font-weight: bold;
+  user-select: none;
+}
+
+#start_inner .title_row h3 {
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
   width: 100%;
   color: #333333;
   font-weight: bold;
@@ -159,12 +171,11 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: normal;
   font-style: normal;
-  font-size: 32px;
-  line-height: 32px;
-  margin-bottom: -20px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 360px;
+  max-width: 60%;
 }
 
 #start_inner #test_share_button {
@@ -187,31 +198,48 @@ button {
 
 .question_inner .title_row .question_number {
   font-weight: normal;
-  font-size: 40px;
+  font-size: 3rem;
   user-select: none;
   text-align: center;
 }
 
 .question_inner .title_row .question_content {
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.4;
-  font-size: 25px;
+  font-size: 2rem;
   user-select: none;
   text-align: center;
   word-break: keep-all;
 }
 
+#result_title {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#result_desc {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .question_inner .answer_button {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   font-family: "GongGothicLight";
-  font-size: 18px;
+  font-size: 1.5rem;
   border-radius: 8px;
   color: black;
   background-color: #e0e0e0;
   border: 2px solid black;
   word-break: keep-all;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+}
+
+.question_inner .button_row {
+  margin-bottom: 10rem;
 }
 
 .question_inner .badge-order {
@@ -234,13 +262,13 @@ button {
 }
 
 #loading_inner {
-  font-family: "GongGothicLight";
+  font-family: "GongGothicMedium";
   display: none;
   font-size: 15px;
   line-height: 24px;
-  color: #4f4f4f;
+  font-weight: bold;
   letter-spacing: normal;
-  background-color: white;
+  background-color: #fffcde;
 }
 
 #loading_inner #loading_image1 {
@@ -296,7 +324,7 @@ button {
   font-family: "GongGothicMedium";
   position: relative;
   background-color: white;
-  padding-bottom: 73px;
+  padding-bottom: 90px;
 }
 
 #result_container .title_row {
@@ -340,7 +368,7 @@ button {
 
 #result_container .result_row {
   background-color: white;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 #result_container .result_row .result_col {
@@ -363,7 +391,7 @@ button {
 
 #result_container .result_row .result_col .result {
   user-select: none;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -427,7 +455,7 @@ button {
   width: 100%;
   border-radius: 999px;
   border: solid 2px #ffffff;
-  font-size: 20px;
+  font-size: 0.8rem;
   color: white;
   background-color: #828282;
 }

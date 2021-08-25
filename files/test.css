@@ -42,7 +42,6 @@ button {
   -ms-user-select: none;
   user-select: none;
 }
-
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 5px 16px;
@@ -130,7 +129,7 @@ button {
   margin-right: auto;
   padding: 0 20px;
   height: auto;
-  max-width: 360px;
+  max-width: 600px;
 }
 
 #start_inner .title_row h2 {
@@ -176,6 +175,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
+  margin-bottom: 2rem;
 }
 
 #start_inner #test_share_button {
@@ -239,7 +239,8 @@ button {
 }
 
 .question_inner .button_row {
-  margin-bottom: 10rem;
+  bottom: 0px;
+  margin-bottom: 2rem;
 }
 
 .question_inner .badge-order {
@@ -264,11 +265,10 @@ button {
 #loading_inner {
   font-family: "GongGothicMedium";
   display: none;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 24px;
   font-weight: bold;
   letter-spacing: normal;
-  background-color: #fffcde;
 }
 
 #loading_inner #loading_image1 {
@@ -472,4 +472,57 @@ button {
 
 .share_modal .title_row h3 {
   color: #4f4f4f;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons-outlined {
+  color: grey;
+  cursor: pointer;
+  font-size: 1.5rem !important;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  /* font-size: 24px; Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
 }

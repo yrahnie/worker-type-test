@@ -4,8 +4,18 @@ $(document).ready(function () {
 
   $(document).on("click", "#test_start", function () {
     gtag_progress("test start");
+    console.log("click");
     $("#start_inner").remove();
     next_set(1);
+  });
+
+  $(document).on("click", "#back_button", function () {
+    console.log("RESTART");
+    location.reload();
+  });
+  $(document).on("click", "#back_home", function () {
+    console.log("RESTART");
+    history.back();
   });
 
   $(document).on("click", ".next_question", function () {
